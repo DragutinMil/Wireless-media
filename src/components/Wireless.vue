@@ -48,7 +48,9 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Distinctio mollitia rerum laudantium culpa.
         </p>
-        <img class="show_button" src="../assets/WMv13333_15.jpg" alt="">
+        <div class="link-button">
+          <a href="" class="show_button">SHOW MORE</a>
+        </div>
       </div>
     </div>
     <div class="grig_part">
@@ -60,9 +62,9 @@
       <p class="text_middle">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       </p>
-      <img  class="show_button"
-      src="../assets/WMv13333_15.jpg" 
-      alt="" > 
+      <div class="link-button">
+        <a href="" class="show_button">SHOW MORE</a>
+      </div>
     </div> 
     </div>
     <div>
@@ -89,10 +91,16 @@
       </div>
     </div>
     <footer>
-      <div>
-        <img src="../assets/WMv1_50.jpg" alt="">
-        <img src="../assets/WMv1_51.jpg" alt="">
-        <img src="../assets/WMv1_52.jpg" alt="">
+      <div style="display:flex">
+        <div class="white_circle">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="white_circle">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="white_circle">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
       </div>
       <div id="footer_menu">
           <p> HOME </p> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -100,8 +108,8 @@
           <p> OUR WORK </p> &nbsp;&nbsp;&nbsp;&nbsp;
           <p> CONTACT </p> &nbsp;&nbsp;
         </div>
-        <div>
-          <img src="../assets/WMv1_59.jpg" alt="">
+        <div class="white_circle">
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
     </footer>
   </div>
@@ -178,9 +186,45 @@ footer{
 	margin:auto;
 	width:765px;
 }
+.link-button{
+  background-color: #f1f1f1;
+  width:85px;
+  font-size: 12px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position:relative;
+  left:70%
+}
+.link-button:hover{
+  background-color:#9fc360 ;
+}
+
+.show_button:hover{
+   color:white;
+}
+
 .padd{
   font-size: 18px;
   padding-left:15px;
+}
+.white_circle{
+  width: 30px;
+  background-color: #FFFFFF;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:10px;
+}
+.white_circle:hover{
+  color:#9fc360;
+}
+.white_circle:visited{
+  color:#9fc360;
 }
 #search-button{
   color:#c6c6c7;
@@ -200,7 +244,7 @@ footer{
   gap:10%;
 }
 .show_button{
-  margin-left:50%
+   text-decoration: none;
 }
 
 #hr{
@@ -241,7 +285,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom:10px;
+  padding-bottom:5px;
+  padding-top:5px;
   color:#858585;
   font-size: 18px;
   cursor: pointer;
@@ -368,6 +413,12 @@ footer>img{
 .exp_parts:hover{
   opacity:0.7
   
+}
+.text_middle{
+  display:none;
+}
+.gray_part{
+  margin-bottom: 40px;
 }
 }
 </style>
